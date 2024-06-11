@@ -1,0 +1,54 @@
+s2sServer: "192.168.1.101:9997"
+tls: false
+servername: "localhost"
+insecureSkipVerify: false
+endPoints:
+  - alias: "logsEndpoint"
+    config:
+      index: "obser-logs"
+      sourcetype: "apm"
+
+  - alias: "checkRunsEndpoint"
+    config:
+      index: "obser-checkruns"
+      sourcetype: "apm"
+
+  - alias: "processesEndpoint"
+    config:
+      index: "obser-process"
+      sourcetype: "apm"
+
+  - alias: "processDiscoveryEndpoint"
+    config:
+      index: "obser-processdiscovery"
+      sourcetype: "apm"
+
+  - alias: "tracesEndpoint"
+    config:
+      index: "obser-traces"
+      sourcetype: "apm"
+
+  - alias: "connectionsEndpoint"
+    config:    
+      index: "obser-connections"
+      sourcetype: "apm"
+
+  - alias: "apmStatsEndpoint"
+    config:   
+      index: "obser-apmstats"
+      sourcetype: "apm"
+
+  - alias: "metadataEndpoint"
+    config:
+      index: "obser-metadata"
+      sourcetype: "apm"
+
+  - alias: "metricsEndpoint"
+    config:     
+      index: "obser-metric"
+      sourcetype: "apm"
+
+  - alias: "test"
+    config:   
+      index: "tcpjsontest"
+      sourcetype: "apm"
