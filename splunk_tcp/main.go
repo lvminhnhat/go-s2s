@@ -15,6 +15,7 @@ func main() {
 	event := map[string]string{
 		"source": "source",
 		"text":   "text",
+		"host":   "host",
 	}
 	client.AutoPush(5 * time.Second)
 	for i := 0; i < 60; i++ {
